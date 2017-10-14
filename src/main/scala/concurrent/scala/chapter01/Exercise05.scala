@@ -6,5 +6,5 @@ object Exercise05 extends App {
   println(permutations("wow").mkString(" "))
   println(permutations("hello").mkString("\n"))
 
-  private def permutations(x: String): Seq[String] = x.toCharArray.permutations.map(new String(_)).toSeq
+  private def permutations(x: String): Seq[String] = x.permutations.toSeq
 }
